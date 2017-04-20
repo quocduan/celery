@@ -129,7 +129,8 @@ class RedisBackend(KeyValueStoreBackend):
         # db may be string and start with / like in kombu.
         db = connparams.get('db') or 0
         db = db.strip('/') if isinstance(db, string_t) else db
-        connparams['db'] = int(db)
+       # connparams['db'] = int(db)
+        connparams['db'] = db # db don't have to be an integer
 
         # Query parameters override other parameters
         connparams.update(query)
