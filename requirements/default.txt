@@ -1,3 +1,4 @@
 pytz>dev
 billiard>=3.3.0.23,<3.4
 #kombu>=3.0.36,<3.1 now we use built-in kombu 
+https://github.com/TranHoangNam960329/kombu/archive/v3.0.37x.zip#egg=kombu
