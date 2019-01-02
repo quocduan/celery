@@ -181,7 +181,7 @@ if is_setuptools:
     extra['extras_require'] = extras_require
 
 # -*- %%% -*-
-
+print 'install_requires', install_requires
 setup(
     name=NAME,
     version=meta['VERSION'],
